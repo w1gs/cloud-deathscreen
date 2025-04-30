@@ -8,7 +8,7 @@ function ClientNotify(msg, type)
 		title = "Information",
 		description = msg,
 		type = type,
-		position = "top-left",
+		position = "top",
 		duration = 5000,
 	})
 end
@@ -22,7 +22,7 @@ function ServerNotify(source, msg, type)
 		title = "Information",
 		description = msg,
 		type = type,
-		position = "top-left",
+		position = "top",
 		duration = 5000,
 	})
 end

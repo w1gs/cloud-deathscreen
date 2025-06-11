@@ -3,13 +3,13 @@
 
 return {
 	--[[ GENERAL SETTINGS ]]
-	Framework = "esx", -- Supported: "esx", "qbcore" or "custom"
+	Framework = "qbcore", -- Supported: "esx", "qbcore" or "custom"
 	Voice = "pma-voice", -- Supported: "pma-voice" or "saltychat". Set to `false` to disable the voice chat deafen feature when dead.
 
 	--[[ TIMER SETTINGS ]]
-	MainTimer = 600, -- Time (in seconds) until the player is fully dead
+	MainTimer = 120, -- Time (in seconds) until the player is fully dead
 	FaceDeathTimer = 5, -- Time (in seconds) until the player can click the "FACE DEATH" button
-	PriceForDeath = 1000, -- Cost for clicking the "FACE DEATH" button
+	PriceForDeath = 10, -- Cost for clicking the "FACE DEATH" button
 
 	--[[ UI SETTINGS ]]
 	SoundVolume = 0.35,
@@ -21,6 +21,9 @@ return {
 		animDict = "combat@damage@writhe",
 		animName = "writhe_loop",
 	},
+
+	--[[ VOICE SETTINGS ]]
+	MuteOnDeathscreen =  false, -- Mute player when in deathscreen
 
 	--[[ ENABLED CONTROLS ]]
 	EnabledControls = {

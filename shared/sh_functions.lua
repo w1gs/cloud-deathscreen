@@ -30,9 +30,11 @@ end
 --- Handles the voice state (mute/unmute) based on the configured voice system.
 ---@param isActive boolean  -- true to activate voice, false to deactivate
 function HandleVoiceState(isActive)
-	if Config.Voice == "pma-voice" then
-		MumbleSetActive(isActive)
-	elseif Config.Voice == "saltychat" then
-		TriggerServerEvent("cloud-deathscreen:server:IsDeadSaltyChat", isActive)
+	if Config.MuteOnDeathscreen then
+		if Config.Voice == "pma-voice" then
+			exports['pma-voice']:toggleMutePlayer(isActive)
+		elseif Config.Voice == "saltychat" then
+			TriggerServerEvent("cloud-deathscreen:server:IsDeadSaltyChat", isActive)
+		end
 	end
 end

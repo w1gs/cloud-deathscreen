@@ -117,7 +117,7 @@ RegisterNUICallback("deathscreen:fetchData", function(data, cb)
 			end
 		end,
 		timeExpired = function()
-			local success = pcall(ReviveActions)
+			local success = ReviveActions()
 			cb(success)
 		end,
 	}

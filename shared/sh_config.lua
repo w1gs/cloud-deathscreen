@@ -3,7 +3,7 @@
 
 return {
 	--[[ GENERAL SETTINGS ]]
-	Framework = "qbcore", -- Supported: "esx", "qbcore" or "custom"
+	Framework = "qbx", -- Supported: "esx", "qbcore" or "custom"
 	Voice = "pma-voice", -- Supported: "pma-voice" or "saltychat". Set to `false` to disable the voice chat deafen feature when dead.
 
 	--[[ TIMER SETTINGS ]]

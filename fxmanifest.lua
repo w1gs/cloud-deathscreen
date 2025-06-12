@@ -15,9 +15,9 @@ repository "https://github.com/yiruzu/cloud-deathscreen"
 license "CC BY-NC"
 
 file { "shared/sh_config.lua", "shared/sh_locales.lua" }
-shared_scripts { "@ox_lib/init.lua", "shared/sh_functions.lua" }
+shared_scripts { "@ox_lib/init.lua", "shared/sh_functions.lua", "@qbx_core/modules/lib.lua" }
 server_scripts { "bridge/server/*.lua", "server/*.lua" }
-client_scripts { "bridge/client/*.lua", "client/*.lua" }
+client_scripts { "bridge/client/*.lua", "client/*.lua", "@qbx_core/modules/playerdata.lua" }
 
 ui_page { "web/build/index.html" }
 files { "web/build/**/*" }
